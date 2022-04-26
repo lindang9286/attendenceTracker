@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+    <title>Document</title>
+    <link href="{{ url_for('static', filename='public/style.css') }}" rel="stylesheet">
+</head>
+<body>
+      
+<div class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a href="#" class="navbar-brand">GROUP.COM</a>
+                    </div>
+
+                    <div class="navbar-collapse collapse" id="mobile_menu">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">About One</a></li>
+                                    <li><a href="#">About Two</a></li>
+                                    <li><a href="#">About Three</a></li>
+                                    <li><a href="#">About Four</a></li>
+                                    <li><a href="#">About Five</a></li>
+                                    <li><a href="#">About Six</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Sign Up</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="login">
+            <h3 class="text-center text-white pt-5">Login form</h3>
+            <div class="container">
+                <div id="login-row" class="row justify-content-center align-items-center">
+                        <div id="login-box" class="col-md-12">
+                            <form id="login-form" class="form" action="" method="post">
+                                <h3 class="text-center text-info">Login</h3>
+                                <div class="form-group">
+                                    <label for="username" class="text-info">Username:</label><br>
+                                    <input type="text" name="username" id="username" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="text-info">Password:</label><br>
+                                    <input type="text" name="password" id="password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                                    <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                                </div>
+                                <div id="register-link" class="text-right">
+                                    <a href="#" class="text-info">Register here</a>
+                                </div>
+                            </form>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid mt-5" style="padding:0pt !important; display: block; bottom: 0%; width: 100%; margin-top: 120px !important;">
+        <div class="card mx-5">
+            <div class="row mb-4 ">
+                <div class="col-md-4 col-sm-11 col-xs-11">
+                    <div class="footer-text pull-left">
+                        <div class="d-flex">
+                            <h1 class="font-weight-bold mr-2 px-3" style="color:#16151a; background-color:#957bda"> T </h1>
+                            <h1 style="color: #957bda">Devs</h1>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non pariatur numquam animi nam at impedit odit nisi.</p>
+                        <div class="social mt-2 mb-3"> <i class="fa fa-facebook-official fa-lg"></i> <i class="fa fa-instagram fa-lg"></i> <i class="fa fa-twitter fa-lg"></i> <i class="fa fa-linkedin-square fa-lg"></i> <i class="fa fa-facebook"></i> </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-1 col-xs-1 mb-2"></div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <h5 class="heading">Services</h5>
+                    <ul>
+                        <li>IT Consulting -</li>
+                        <li>Development</li>
+                        <li>Cloud</li>
+                        <li>DevOps & Support</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <h5 class="heading">Industries</h5>
+                    <ul class="card-text">
+                        <li>Finance</li>
+                        <li>Public Sector</li>
+                        <li>Smart Office</li>
+                        <li>Retail</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-4">
+                    <h5 class="heading">Company</h5>
+                    <ul class="card-text">
+                        <li>About Us</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                        <li>Join Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="divider mb-4"> </div>
+            <div class="row" style="font-size:10px;">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="pull-left">
+                        <p><i class="fa fa-copyright"></i> 2020 thezpdesign</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <div class="pull-right mr-4 d-flex policy">
+                        <div>Terms of Use</div>
+                        <div>Privacy Policy</div>
+                        <div>Cookie Policy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
